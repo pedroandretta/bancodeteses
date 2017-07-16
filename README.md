@@ -25,4 +25,4 @@ Esses procedimentos valem para “sucupira - arrumar dados - ppgs.xlsx”, “su
 Dica:
 Use o Open Refine para trarar dados de autor e título.
 Ao coletar registros do Portal de Teses e Dissertações da CAPES, por vezes aparecem duplicatas. Certifique-se de tratar os dados antes de autor e título antes de remover duplicatas.
-Use o Pajek “createpajek.exe” para após empregar o “elaborador de rede.xlsx”.
+Use o Pajek “createpajek.exe” após empregar o “elaborador de rede.xlsx”.
