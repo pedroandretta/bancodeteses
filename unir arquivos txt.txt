@@ -1,0 +1,10 @@
+1. Certifique-se que todos os arquivos que deseja unificar estão todos na mesma pasta.
+2. Abra o painel de comando do Windows. Use Tela do Windows + R
+3. No painel digite: cmd
+4. Navegue via linha de comando até encontrar a pasta com os arquivos que deseja unir.
+5. Ao chegar na página, digite: type *.txt >> [NOME].txt
+
+comandos:
+dir
+cd
+cd..
