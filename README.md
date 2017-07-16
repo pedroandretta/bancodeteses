@@ -6,6 +6,8 @@ Os arquivos e métodos de coletas foram sistematizados utilizando o navegador Mo
 O arquivo "coletador_codigo_fonte.docm" e "coletador_páginas_web.xlsm" foram criados em meados de fevereiro de 2017. Suas macros foram configuradas para o Painel de resultados do Portal de Teses e Dissertações da CAPES da época.
 Para utilizar os arquivos  "coletador_codigo_fonte.docm" e "coletador_páginas_web.xlsm" o arquivo deve estar habilitado para edicão e com suas macros também habilitadas.
 O arquivo "extrair_bancodetesescapes.iim" funciona no IMACRO.
+O arquivo "extrair_bancodetesescapes.iim" deve ser empregado após a realização da consulta no http://bancodeteses.capes.gov.br/banco-teses/#!/.
+	Certifique-se de ajustar o número de LOOPs conforme a quantidade de resultados apresentados na consulta. 
 O arquivo "extrair_bancodetesescapes.iim" e "unir arquivos txt.txt" podem substituir a função do "coletador_codigo_fonte.docm".
 Uma vez utilizado o "extrair_bancodetesescapes.iim" e "unir arquivos txt.txt", deve-se isolar e TRATAR as string "href=" ", para que todas direcionem para a URL do registro SUCUPIRA, feito isso, basta copiar os endereços no "coletador_páginas_web.xlsm".
 O arquivo "coletador_páginas_web.xlsm" possui duas macros: "adds" e "ReplicaDados". Deve-se usar primeiro a "adds" e em seguida "ReplicaDados".
