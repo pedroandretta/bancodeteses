@@ -1,5 +1,5 @@
 # bancodeteses
-Instrumentos para a coleta e tratamento dos dados no Banco de Teses &amp; Dissertações da CAPES
+Instrumentos para a coleta e tratamento dos dados no Banco de Teses &amp; Dissertações da CAPES e SUCUPIRA
 
 Observações:
 Os arquivos e métodos de coletas foram sistematizados utilizando o navegador Mozilla Firefox e Pacote Office Home and Student 2010.
