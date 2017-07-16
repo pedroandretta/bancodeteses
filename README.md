@@ -1,28 +1,20 @@
 # bancodeteses
 Instrumentos para a coleta e tratamento dos dados no Banco de Teses &amp; Dissertações da CAPES e SUCUPIRA
 
-Observações:
-Os arquivos e métodos de coletas foram sistematizados utilizando o navegador Mozilla Firefox e Pacote Office Home and Student 2010.
-O arquivo "coletador_codigo_fonte.docm" e "coletador_páginas_web.xlsm" foram criados em meados de fevereiro de 2017. Suas macros foram configuradas para o Painel de resultados do Portal de Teses e Dissertações da CAPES da época.
-Para utilizar os arquivos  "coletador_codigo_fonte.docm" e "coletador_páginas_web.xlsm" o arquivo deve estar habilitado para edicão e com suas macros também habilitadas.
-O arquivo "extrair_bancodetesescapes.iim" funciona no IMACRO.
-O arquivo "extrair_bancodetesescapes.iim" deve ser empregado após a realização da consulta no http://bancodeteses.capes.gov.br/banco-teses/#!/.
-	Certifique-se de ajustar o número de LOOPs conforme a quantidade de resultados apresentados na consulta. 
-O arquivo "extrair_bancodetesescapes.iim" e "unir arquivos txt.txt" podem substituir a função do "coletador_codigo_fonte.docm".
-Uma vez utilizado o "extrair_bancodetesescapes.iim" e "unir arquivos txt.txt", deve-se isolar e TRATAR as string "href=" ", para que todas direcionem para a URL do registro SUCUPIRA, feito isso, basta copiar os endereços no "coletador_páginas_web.xlsm".
-O arquivo "coletador_páginas_web.xlsm" possui duas macros: "adds" e "ReplicaDados". Deve-se usar primeiro a "adds" e em seguida "ReplicaDados".
-    A macro "adds" deve ser constantemente editada, alterando o valor de 4 na expressão "For x = 1 To 4". O valor 4 deve corresponder ao mesmo numero de linhas utilizados na coluna A e F do documento.
-    A macro "adds" copiará todo conteúdo html apresentado nas linhas A/F em novas planilhas, no mesmo arquivo. O computador deverá estar conectado a internet. Não será possível utilizar o excel enquanto o processo é "rodado", do contrário dará erro.
-    A macro "ReplicaDados" irá unificar todas as planilhas geradas pela macro "adds".
-Depois de coletados os dados do Portal da CAPES, deve-se seguir para os arquivo “sucupira - arrumar dados - tcc.xlsx”.
-	Copie as LINHAS utilizadas no "coletador_páginas_web.xlsm" para “sucupira - arrumar dados - tcc.xlsx”.
-	O arquivo “sucupira - arrumar dados - tcc.xlsx”, calculará valores textuais e irá “limpar os excessos de informações”. Ver linha 211.
-		Sempre será preciso arrastar o jogo de fórmulas do arquivo “sucupira - arrumar dados - tcc.xlsx”, para a direita, ou remover as colunas não empregadas.
-	Uma vez com os dados “limpos”, copie e cole especial, na planilha seguinte.
-	Na planilha seguinte, copie novamente e cole especial – transpor para a próxima coluna.
-Esses procedimentos valem para “sucupira - arrumar dados - ppgs.xlsx”, “sucupira - arrumar dados - docentes.xlsx”, “sucupira - arrumar dados - externo.xlsx”, desde que a origem dos dados sejam diretos do SUCUPIRA.
-
-Dica:
-Use o Open Refine para trarar dados de autor e título.
-Ao coletar registros do Portal de Teses e Dissertações da CAPES, por vezes aparecem duplicatas. Certifique-se de tratar os dados antes de autor e título antes de remover duplicatas.
-Use o Pajek “createpajek.exe” após empregar o “elaborador de rede.xlsx”.
+<h2><strong>Observa&ccedil;&otilde;es:</strong></h2>
+<ul>
+<li>Os arquivos e m&eacute;todos de coletas foram sistematizados utilizando o navegador Mozilla Firefox e Pacote Office Home and Student 2010.</li>
+<li>O arquivo "coletador_codigo_fonte.docm" e "coletador_p&aacute;ginas_web.xlsm" foram criados em meados de fevereiro de 2017. Suas macros foram configuradas para o Painel de resultados do Portal de Teses e Disserta&ccedil;&otilde;es da CAPES da &eacute;poca.</li>
+<li>Para utilizar os arquivos "coletador_codigo_fonte.docm" e "coletador_p&aacute;ginas_web.xlsm" o arquivo deve estar habilitado para edic&atilde;o e com suas macros tamb&eacute;m habilitadas.</li>
+<li>O arquivo "extrair_bancodetesescapes.iim" funciona no IMACRO &lt; <a href="https://addons.mozilla.org/pt-BR/firefox/addon/imacros-for-firefox/">https://addons.mozilla.org/pt-BR/firefox/addon/imacros-for-firefox/</a> &gt;.</li>
+<li>O arquivo "extrair_bancodetesescapes.iim" deve ser empregado ap&oacute;s a realiza&ccedil;&atilde;o da consulta no Banco de Teses e Disserta&ccedil;&otilde;es da CAPES &lt; <a href="http://bancodeteses.capes.gov.br/banco-teses/#!/">http://bancodeteses.capes.gov.br/banco-teses/#!/</a>. &gt;.<br /> Certifique-se de ajustar o n&uacute;mero de LOOPs conforme a quantidade de resultados apresentados na consulta.</li>
+<li>O arquivo "extrair_bancodetesescapes.iim" e "unir arquivos txt.txt" podem substituir a fun&ccedil;&atilde;o do "coletador_codigo_fonte.docm".<br />Uma vez utilizado o "extrair_bancodetesescapes.iim" e "unir arquivos txt.txt", deve-se isolar e TRATAR as string "href=" ", para que todas direcionem para a URL do registro SUCUPIRA, feito isso, basta copiar os endere&ccedil;os no "coletador_p&aacute;ginas_web.xlsm".</li>
+<li>O arquivo "coletador_p&aacute;ginas_web.xlsm" possui duas macros: "adds" e "ReplicaDados". Deve-se usar primeiro a "adds" e em seguida "ReplicaDados".<br /> A macro "adds" deve ser constantemente editada, alterando o valor de 4 na express&atilde;o "For x = 1 To 4". O valor 4 deve corresponder ao mesmo numero de linhas utilizados na coluna A e F do documento.<br /> A macro "adds" copiar&aacute; todo conte&uacute;do html apresentado nas linhas A/F em novas planilhas, no mesmo arquivo. O computador dever&aacute; estar conectado a internet. N&atilde;o ser&aacute; poss&iacute;vel utilizar o excel enquanto o processo &eacute; "rodado", do contr&aacute;rio dar&aacute; erro.<br /> A macro "ReplicaDados" ir&aacute; unificar todas as planilhas geradas pela macro "adds".</li>
+<li>Depois de coletados os dados do Portal da CAPES, deve-se seguir para os arquivo &ldquo;sucupira - arrumar dados - tcc.xlsx&rdquo;.<br /> Copie as LINHAS utilizadas no "coletador_p&aacute;ginas_web.xlsm" para &ldquo;sucupira - arrumar dados - tcc.xlsx&rdquo;.<br /> O arquivo &ldquo;sucupira - arrumar dados - tcc.xlsx&rdquo;, calcular&aacute; valores textuais e ir&aacute; &ldquo;limpar os excessos de informa&ccedil;&otilde;es&rdquo;. Ver linha 211.<br /> Sempre ser&aacute; preciso arrastar o jogo de f&oacute;rmulas do arquivo &ldquo;sucupira - arrumar dados - tcc.xlsx&rdquo;, para a direita, ou remover as colunas n&atilde;o empregadas.<br /> Uma vez com os dados &ldquo;limpos&rdquo;, copie e cole especial, na planilha seguinte.<br /> Na planilha seguinte, copie novamente e cole especial &ndash; transpor para a pr&oacute;xima coluna.</li>
+<li>Esses procedimentos valem para &ldquo;sucupira - arrumar dados - ppgs.xlsx&rdquo;, &ldquo;sucupira - arrumar dados - docentes.xlsx&rdquo;, &ldquo;sucupira - arrumar dados - externo.xlsx&rdquo;, desde que a origem dos dados sejam diretos do SUCUPIRA.<br /><br />
+<h2><strong>Dica:</strong></h2>
+</li>
+<li>Use o Open Refine para trarar dados de autor e t&iacute;tulo.</li>
+<li>Ao coletar registros do Portal de Teses e Disserta&ccedil;&otilde;es da CAPES, por vezes aparecem duplicatas. Certifique-se de tratar os dados antes de autor e t&iacute;tulo antes de remover duplicatas.</li>
+<li>Use o Pajek &ldquo;createpajek.exe&rdquo; ap&oacute;s empregar o &ldquo;elaborador de rede.xlsx&rdquo;.</li>
+</ul>
