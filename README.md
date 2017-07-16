@@ -4,12 +4,13 @@ Instrumentos para a coleta e tratamento dos dados no Banco de Teses &amp; Disser
 Observações:
 Os arquivos e métodos de coletas foram sistematizados utilizando o navegador Mozilla Firefox e Pacote Office Home and Student 2010.
 O arquivo "coletador_codigo_fonte.docm" e "coletador_páginas_web.xlsm" foram criados em meados de fevereiro de 2017. Suas macros foram configuradas para o Painel de resultados do Portal de Teses e Dissertações da CAPES da época.
-Para utilizar os arquivos  "coletador_codigo_fonte.docm" e "coletador_páginas_web.xlsm" o arquivo deve estar habilitado para edicação e com suas macros também habilitadas.
+Para utilizar os arquivos  "coletador_codigo_fonte.docm" e "coletador_páginas_web.xlsm" o arquivo deve estar habilitado para edicão e com suas macros também habilitadas.
 O arquivo "extrair_bancodetesescapes.iim" funciona no IMACRO.
 O arquivo "extrair_bancodetesescapes.iim" e "unir arquivos txt.txt" podem substituir a função do "coletador_codigo_fonte.docm".
 Uma vez utilizado o "extrair_bancodetesescapes.iim" e "unir arquivos txt.txt", deve-se isolar e TRATAR as string "href=" ", para que todas direcionem para a URL do registro SUCUPIRA, feito isso, basta copiar os endereços no "coletador_páginas_web.xlsm".
 O arquivo "coletador_páginas_web.xlsm" possui duas macros: "adds" e "ReplicaDados". Deve-se usar primeiro a "adds" e em seguida "ReplicaDados".
     A macro "adds" deve ser constantemente editada, alterando o valor de 4 na expressão "For x = 1 To 4". O valor 4 deve corresponder ao mesmo numero de linhas utilizados na coluna A e F do documento.
+    A macro "adds" copiará todo conteúdo html apresentado nas linhas A/F em novas planilhas, no mesmo arquivo. O computador deverá estar conectado a internet. Não será possível utilizar o excel enquanto o processo é "rodado", do contrário dará erro.
     A macro "ReplicaDados" irá unificar todas as planilhas geradas pela macro "adds".
 Depois de coletados os dados do Portal da CAPES, deve-se seguir para os arquivo “sucupira - arrumar dados - tcc.xlsx”.
 	Copie as LINHAS utilizadas no "coletador_páginas_web.xlsm" para “sucupira - arrumar dados - tcc.xlsx”.
